@@ -1,0 +1,51 @@
+import java.util.*;
+class Switch_Calc
+{
+    public static void main(){
+        //int n=1;
+        int a=20,b=10;
+        System.out.println("Welcome to calculator Program using Java");
+        System.out.println("Choose which Operation to Perform");
+        Scanner sc=new Scanner(System.in);
+        System.out.println("1.Add \n 2.sub \n 3.mul \n 4.div \n 5.None of the above");
+        int n=sc.nextInt();
+        
+        
+        switch(n)
+        {
+            case 1:
+                if(n==1)
+                {
+                   int sum=a+b; 
+                   System.out.println("The addition is "+sum);
+                }
+            break;
+            case 2:
+                if(n==2)
+                {
+                   int sum=a-b; 
+                   System.out.println("The Subtraction is "+sum);
+                }
+            break;
+            case 3:
+                if(n==3)
+                {
+                   int sum=a*b; 
+                   System.out.println("The Multiplication is "+sum);
+                }
+            break;
+            case 4:
+                if(n==4)
+                {
+                   int sum=a/b; 
+                   System.out.println("The Division is "+sum);
+                }
+            break;
+            case 5:
+                   System.out.println("You Chose Nothing");
+            break;
+            default:
+                System.out.println("None of these");
+        }
+    }
+}
