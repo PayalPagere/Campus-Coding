@@ -1,0 +1,23 @@
+import java.util.*;
+class Fibonacci_Series
+{
+    public static void main(int n)
+    {
+        int n1=1,n2=1,n3,sum=0;
+        Scanner sc=new Scanner(System.in);
+        System.out.print("0+1+");
+        for(int i=1;i<=n;i++){
+            n3=n1+n2;
+            n1=n2;
+            n2=n3;
+            sum=sum+n3;
+            if(i<n){
+            System.out.print(n3+"+");}
+            else{
+                System.out.print(n3+"=");
+            }
+            
+        }
+        System.out.print(sum+1);
+    }
+}
