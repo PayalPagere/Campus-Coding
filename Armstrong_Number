@@ -1,0 +1,14 @@
+class Armstorong_num
+{
+    public static void main(int n){
+    int reverse=0,rem;
+    System.out.println("The number is: "+n);
+    while(n!=0)
+    {
+        rem=n%10;
+        reverse=reverse*10+rem;
+        n=n/10;
+    }
+    System.out.println("REverse of the number is: "+reverse);
+    }
+}
